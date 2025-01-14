@@ -4,16 +4,15 @@ body {
     margin: 0;
     padding: 0;
     color: #222;
-    background: #f7f9fc; /* Subtle light background */
+    background: #f7f9fc;
 }
 
-/* Header styles */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #2a9df4; /* Vibrant blue background */
+    background-color: #2a9df4; 
     color: white;
     position: relative;
 }
@@ -32,7 +31,7 @@ body {
 .name-section .domains {
     font-size: 1.1rem;
     margin: 5px 0 0;
-    color: #e0f7ff; /* Light blue for the domains */
+    color: #e0f7ff; 
 }
 
 .header img {
@@ -45,7 +44,6 @@ body {
     border: 3px solid white;
 }
 
-/* Container styling */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +69,6 @@ body {
     width: 70%;
 }
 
-/* Section heading styles */
 h2 {
     color: #2a9df4; /* Matches header background */
     font-size: 1.5rem;
@@ -119,7 +116,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Media queries for responsiveness */
+
 @media screen and (max-width: 768px) {
     .left-column, .right-column {
         width: 100%;
@@ -185,17 +182,15 @@ a:hover {
     font-size: 0.95rem;
 }
 
-/* Icon Styles for Added Tech Skills */
 #skills ul li .icon {
     font-size: 3rem;
     color: #2a9df4;
     margin-bottom: 10px;
 }
 
-/* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
     #skills ul {
-        grid-template-columns: 1fr 1fr; /* 2 columns for smaller screens */
+        grid-template-columns: 1fr 1fr; 
     }
 }
 
