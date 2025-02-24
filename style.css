@@ -13,9 +13,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #2a9df4; 
-    color: white;
+    background-color: #C3CDE6; 
+    color: #E3F6FF;
     position: relative;
+}
+#myname{
+    -webkit-text-fill-color: black;
+}
+.domains{
+    -webkit-text-fill-color: black;
 }
 
 .name-section {
@@ -73,8 +79,8 @@ body {
 
 /* Section heading styles */
 h2 {
-    color: #2a9df4; 
-    font-size: 1.5rem;
+    color: black; 
+    font-size: 1.3rem;
     margin-bottom: 15px;
     border-bottom: 2px solid #c8d6e5;
     padding-bottom: 5px;
@@ -89,19 +95,31 @@ ul li {
     margin: 10px 0;
     font-size: 1rem;
 }
-
+/* Internship */
+.myInternship {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f4faff;
+    border: 1px solid #c8d6e5;
+    border-radius: 8px;
+    font-weight:bold;
+}
 /* Project styling */
-.project {
+.myproject {
     margin-bottom: 20px;
     padding: 10px;
     background: #f4faff;
     border: 1px solid #c8d6e5;
     border-radius: 8px;
 }
+.pro{
+    font-weight:bold;
+}
 
 .project h3 {
     margin: 0 0 10px;
-    color: #0073e6;
+    color: black;
+    
 }
 
 .project p {
@@ -110,7 +128,7 @@ ul li {
 
 /* Links styling */
 a {
-    color: #2a9df4;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -119,7 +137,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .left-column, .right-column {
         width: 100%;
@@ -132,50 +149,80 @@ a:hover {
     }
 }
 
+/* Technical Skills Section */
 #skills {
     background: #ffffff;
-    padding: 20px;
+    padding: 12px;
     border-radius: 8px;
-    border: 1px solid #c8d6e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 #skills h2 {
-    color: #2a9df4; 
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #c8d6e5;
-    padding-bottom: 5px;
+    color: black; 
+    font-size: 1.35rem;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #c8d6e5;
+    padding-bottom: 3px;
 }
 
 #skills ul {
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive layout */
+    gap: 5px;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 #skills ul li {
-    margin: 5px 0;
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #c8d6e5;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 1rem;
-    color: #222; 
+}
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 #skills ul li strong {
+    display: block;
     font-weight: bold;
-    color: #0073e6;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#skills ul li span {
+    color: #555;
+    font-size: 0.95rem;
 }
 
 /* Icon Styles for Added Tech Skills */
 #skills ul li .icon {
     font-size: 3rem;
-    color: #2a9df4;
+    color: black;
     margin-bottom: 10px;
 }
 
-/* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
     #skills ul {
         grid-template-columns: 1fr 1fr; 
     }
 }
+.social-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
 
+.section-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    m
+}
