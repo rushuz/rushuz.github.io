@@ -1,228 +1,176 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #222;
-    background: #f7f9fc; 
+:root {
+  --primary: #2c3e50;
+  --secondary: #5a7cff;
+  --bg-light: #f4f6fb;
+  --card-bg: #ffffff;
+  --border-soft: #e3e7f0;
 }
 
-/* Header styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f4f6fb, #eef2ff);
+  color: #222;
+}
+
+/* HEADER */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #C3CDE6; 
-    color: #E3F6FF;
-    position: relative;
-}
-#myname{
-    -webkit-text-fill-color: black;
-}
-.domains{
-    -webkit-text-fill-color: black;
+  padding: 50px;
+  background: linear-gradient(120deg, #5a7cff, #6ea8ff);
+  color: white;
+  border-radius: 0 0 24px 24px;
 }
 
 .name-section {
-    text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.name-section h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    font-weight: bold;
-    color: #ffffff;
+#myname {
+  font-size: 3rem;
+  margin: 0;
 }
 
-.name-section .domains {
-    font-size: 1.1rem;
-    margin: 5px 0 0;
-    color: #e0f7ff; 
+.domains {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 .header img {
-    position: absolute;
-    top: 30px;
-    right: 80px;
-    width: 180px;
-    height: 220px;
-    object-fit: cover;
-    border: 3px solid white;
+  width: 180px;
+  height: 220px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255,0.6);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-/* Container styling */
+/* CONTAINER */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-.left-column, .right-column {
-    padding: 20px;
-    box-sizing: border-box;
-}
-
+/* COLUMNS */
 .left-column {
-    background: #dfe9f3; 
-    width: 30%;
-    border-right: 2px solid #c8d6e5;
+  width: 32%;
+  background: #f8faff;
+  padding: 30px;
+  border-right: 1px solid var(--border-soft);
 }
 
 .right-column {
-    background: white;
-    width: 70%;
+  width: 68%;
+  padding: 30px;
 }
 
-/* Section heading styles */
+/* SECTIONS */
+section {
+  margin-bottom: 30px;
+  animation: fadeUp 0.6s ease;
+}
+
 h2 {
-    color: black; 
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #c8d6e5;
-    padding-bottom: 5px;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+h3 {
+  margin: 0 0 6px;
+}
+
+p, li {
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  padding-left: 18px;
 }
 
-ul li {
-    margin: 10px 0;
-    font-size: 1rem;
-}
-/* Internship */
-.myInternship {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: #f4faff;
-    border: 1px solid #c8d6e5;
-    border-radius: 8px;
-    font-weight:bold;
-}
-/* Project styling */
-.myproject {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: #f4faff;
-    border: 1px solid #c8d6e5;
-    border-radius: 8px;
-}
-.pro{
-    font-weight:bold;
-}
-
-.project h3 {
-    margin: 0 0 10px;
-    color: black;
-    
-}
-
-.project p {
-    margin: 0;
-}
-
-/* Links styling */
+/* LINKS */
 a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    .left-column, .right-column {
-        width: 100%;
-    }
-
-    .header img {
-        position: static;
-        margin: 10px auto;
-        display: block;
-    }
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-left: 4px solid var(--secondary);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
-/* Technical Skills Section */
-#skills {
-    background: #ffffff;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+.card:hover {
+  transform: translateY(-4px);
 }
 
-#skills h2 {
-    color: black; 
-    font-size: 1.35rem;
-    margin-bottom: 5px;
-    border-bottom: 2px solid #c8d6e5;
-    padding-bottom: 3px;
-}
-
+/* SKILLS */
 #skills ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive layout */
-    gap: 5px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #skills ul li {
-    background: #f0f4f8;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #c8d6e5;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 1rem;
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  transition: 0.3s;
 }
 
 #skills ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-#skills ul li strong {
-    display: block;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 5px;
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#skills ul li span {
-    color: #555;
-    font-size: 0.95rem;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 
-/* Icon Styles for Added Tech Skills */
-#skills ul li .icon {
-    font-size: 3rem;
-    color: black;
-    margin-bottom: 10px;
-}
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
 
-@media screen and (max-width: 768px) {
-    #skills ul {
-        grid-template-columns: 1fr 1fr; 
-    }
-}
-.social-logo {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-.section-logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    
+  .name-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
