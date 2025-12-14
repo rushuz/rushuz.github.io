@@ -75,7 +75,7 @@ body {
 }
 
 /* SECTIONS */
-.section-logo {
+section {
   margin-bottom: 30px;
   animation: fadeUp 0.6s ease;
 }
@@ -109,6 +109,29 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* section-logo */
+.section-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 10px;
+  vertical-align: middle;
+
+  background: rgba(90, 124, 255, 0.12);
+  padding: 6px;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 /* CARDS */
 .card {
