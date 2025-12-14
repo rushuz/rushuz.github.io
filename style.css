@@ -75,7 +75,7 @@ body {
 }
 
 /* SECTIONS */
-section {
+.section-logo {
   margin-bottom: 30px;
   animation: fadeUp 0.6s ease;
 }
