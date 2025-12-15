@@ -118,9 +118,10 @@ a:hover {
   margin-right: 10px;
   vertical-align: middle;
 
-  background: rgba(90, 124, 255, 0.12);
-  padding: 6px;
-  border-radius: 8px;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 
 }
 
