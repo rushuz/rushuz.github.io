@@ -21,7 +21,7 @@ body {
 .header {
   padding: 50px;
   background: linear-gradient(120deg, #5a7cff, #6ea8ff);
-  color: white;
+  color: black;
   border-radius: 0 0 24px 24px;
 }
 
@@ -110,11 +110,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.pro {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* section-logo */
 .section-logo {
   width: 28px;
   height: 28px;
-  object-fit: contain;
+  object-fit: fill;
   margin-right: 10px;
   vertical-align: middle;
 
