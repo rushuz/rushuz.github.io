@@ -20,7 +20,7 @@ body {
 /* HEADER */
 .header {
   padding: 50px;
-  background: linear-gradient(120deg, #5a7cff, #6ea8ff);
+  background: linear-gradient(120deg, #e1e3ff, #6a65d8);
   color: black;
   border-radius: 0 0 24px 24px;
 }
@@ -117,8 +117,8 @@ a:hover {
 
 /* section-logo */
 .section-logo {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   object-fit: fill;
   margin-right: 10px;
   vertical-align: middle;
